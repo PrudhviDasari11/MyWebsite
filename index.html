@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prudhvi Dasari's First Website</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+    }
+
+    header{
+      background:#ff4d6d;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      background:#222;
+      padding:15px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+    }
+
+    nav a:hover{
+      color:#ff4d6d;
+    }
+
+    .hero{
+      text-align:center;
+      padding:60px 20px;
+    }
+
+    .hero h1{
+      font-size:40px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      color:#bbb;
+      margin-bottom:20px;
+    }
+
+    button{
+      padding:12px 20px;
+      border:none;
+      border-radius:10px;
+      background:#ff4d6d;
+      color:white;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#ff1f4b;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+      gap:20px;
+      padding:40px;
+    }
+
+    .card{
+      background:#1c1c1c;
+      padding:20px;
+      border-radius:15px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .gallery{
+      padding:40px;
+      text-align:center;
+    }
+
+    .gallery img{
+      width:200px;
+      border-radius:12px;
+      margin:10px;
+    }
+
+    .contact{
+      padding:40px;
+      text-align:center;
+    }
+
+    input, textarea{
+      width:80%;
+      max-width:400px;
+      margin:10px 0;
+      padding:12px;
+      border:none;
+      border-radius:10px;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#222;
+      color:#aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Prudhvi Dasari'S 🚀</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Simple, clean and beginner-friendly HTML website.</p>
+
+    <button onclick="alert('Hello 👋')">
+      Click Me
+    </button>
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h2>Car's</h2>
+      <p>Love for cars.....</p>
+    </div>
+
+    <div class="card">
+      <h2>Bike's</h2>
+      <p>Interested in building not buying</p>
+    </div>
+
+    <div class="card">
+      <h2>Life Style</h2>
+      <p>Just live to explore</p>
+    </div>
+
+  </section>
+
+  <section class="gallery">
+    <h1>Gallery</h1>
+
+    <img src="IMG_8462.jpg">
+    <img src="e0e3806c-9c3c-490a-a153-d69ef9f0485e.JPG">
+    <img src="IMG_5270.jpg">
+  </section>
+
+  <section class="contact">
+    <h1>Contact Me</h1>
+
+    <input type="text" placeholder="Your Name"><br>
+
+    <input type="email" placeholder="Your Email"><br>
+
+    <textarea rows="5" placeholder="Message"></textarea><br>
+
+    <button>Send</button>
+  </section>
+
+  <footer>
+    Live Life to the fullest!
+  </footer>
+
+</body>
+</html>
